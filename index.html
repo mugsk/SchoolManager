@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SchoolManager</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/my-styles.css" rel="stylesheet" media="screen">    
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    <noscript>
+    <!-- To hide the detailed benefits element if javascript is turned off -->
+    <style>
+        #benefits-features{
+          display:none;
+        }
+
+
+    </style>
+</noscript>
+  </head>
+  <body>
+  <!-- Navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+      <div class="container">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+       <img class="nav-img pull-left" src="img/Transpatent.png" alt="SchoolManager">                
+       <div class="collapse navbar-collapse pull-right">
+             
+          <ul class="nav nav-pills">
+            <li class="home" onclick="navItemSelected(this)"><a href="#">Home</a></li>
+            <li><a href="about.html" onclick="navItemSelected(this)">About</a></li>
+            <li><a href="#features" onclick="navItemSelected(this)">Features</a></li>
+            <li><a href="#services" onclick="navItemSelected(this)">Services</a></li>
+            <li><a href="#pricingPlans" onclick="navItemSelected(this)">Plans</a></li>
+            <li><a href="contact-us.html" onclick="navItemSelected(this)">Contact Us</a></li>         
+           </ul>
+        </div> 
+
+     </div> 
+    </div>
+  <!-- End Navbar -->
+
+  <!-- Carousel -->
+  <div id="myCarousel" class="carousel slide jumbotron" data-ride="carousel">
+    <div class="container">
+      <ol class="carousel-indicators">
+        <li class="active" data-target="#myCarousel" data-slide-to="0"> </li>
+        <li data-target="#myCarousel" data-slide-to="1"> </li>
+        <li data-target="#myCarousel" data-slide-to="2"> </li>
+      </ol>
+        <div class="carousel-inner">
+        <div class="item active slideshow-1">
+          <h1 class="text-center"> A School Management and Parents Communication System</h1>
+          <p class="main-intro text-center">
+
+         <!--    <span class="">SchoolManager&#0153;</span> is a distributed web-based software solution to make school management simple and efficient for teachers &amp; administrators and enable effective communication with parents. -->
+          </p>
+          <p class="jumbotron-btn-group btn-group">  
+          <a class="btn btn-lg btn-main" data-toggle="modal" href="#buy-now">Buy Now</a>
+          <a class="btn btn-demo" data-toggle="modal" href="#registerModal"><span class="glyphicon glyphicon-play"></span>&nbsp;Or try the FREE Demo</a>
+          </p>        
+        </div>
+        <div class="item slideshow-2">
+          <h1 class="text-center"> Improve the efficiency of your teachers</h1>
+          <p class="main-intro text-center">
+            Access School and Student Information from anywhere, anytime. Automate results generation. <br>                    
+          </p>
+          <p class="jumbotron-btn-group btn-group">
+          <a class="btn btn-lg btn-main" href="#">Buy Now</a>
+          <a class="btn btn-demo" data-toggle="modal" href="#registerModal"><span class="glyphicon glyphicon-play"></span>&nbsp;Or try the FREE Demo</a>
+          </p>        
+        </div>
+        <div class="item slideshow-3">
+          <h1 class="text-center"> Start on a One Term Trial Contract Today</h1>
+          <p class="main-intro text-center">          
+              Minimal Down payments. Free Training. 100% Availability
+          </p>
+          <p class="jumbotron-btn-group btn-group">
+          <a class="btn btn-lg btn-main" href="#">Buy Now</a>
+          <a class="btn btn-demo" data-toggle="modal" href="#registerModal"><span class="glyphicon glyphicon-play"></span>&nbsp;Or try the FREE Demo</a>
+          </p>        
+        </div>        
+       
+        </div>
+    </div>
+    </div>
+<!-- End Carousel -->
+<!-- Carousel Controls-->
+    <a class="carousel-control carousel-left" href="#myCarousel" data-slide="prev">
+      <span class="icon-prev"></span>
+    </a>
+    <a class="carousel-control carousel-right" href="#myCarousel" data-slide="next">
+      <span class="icon-next"></span>
+    </a>
+<!-- End Carousel Controls-->
+  
+  <!-- Modal Pop up window for 'Demo Registration'-->
+  <div class="modal fade" id="registerModal">
+    <div class="modal-dialog">
+      
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;          
+          </button>
+          <h4 class="modal-title"> Experience a Free Demonstration of SchoolManager here by registering for a Demo Account. Or Start a Trial for your School by calling our agents on any of the numbers below:</h4>
+          <div class="modal-body">
+             <form class="form-inline">
+               <div class="form-group">
+                 <label class="sr-only" for="name">Name</label>
+                 <input type="text" class="form-control" id="name" placeholder="Name"><br>
+                 <label class="sr-only" for="school">School&#47;Organization</label><br>
+                 <input type="text" class="form-control" id="school" placeholder="School&#47;Organization"><br>
+                 <label class="sr-only" for="telephone">Telephone</label><br>
+                 <input type="text" class="form-control" id="telephone" placeholder="Telephone Number"><br>
+               </div>
+               <br><br><br>
+               <button type="submit" class="btn btn-primary" data-dismiss="modal"> Register </button>
+             </form>          
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>  
+  <!-- End Modal -->  
+  
+
+  <!-- Modal pop-up for 'Buy Now'-->
+  <div class="modal fade" id="buy-now">
+    <div class="modal-dialog">
+      
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;          
+          </button>
+          <h4 class="modal-title"> Please fill in your details in the form below and we will be in touch with you shortly.</h4>
+          <div class="modal-body">
+             <form class="form-inline">
+               <div class="form-group">
+                 <label class="sr-only" for="contact-name">Name</label>
+                 <input type="text" class="form-control" id="contact-name" placeholder="Name"><br>
+                 <label class="sr-only" for="contact-school">School&#47;Organization</label><br>
+                 <input type="text" class="form-control" id="contact-school" placeholder="School&#47;Organization"><br>
+                 <label class="sr-only" for="contact-telephone">Telephone</label><br>
+                 <input type="text" class="form-control" id="contact-telephone" placeholder="Telephone Number"><br>
+               </div>
+               <br><br><br>
+               <button type="submit" class="btn btn-primary" data-dismiss="modal"> Submit </button>
+             </form>          
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>  
+  <!-- End Modal -->  
+
+  <!-- OUR AMAZING FEATURES -->  
+  <div class="container">
+  <section id="features">
+
+    <div class="row"> 
+    <div class="col-sm-12">
+      <h6 class="col-sm-offset-12 text-center sub-heading">Our Amazing Features</h6>
+    </div>
+    </div>
+    <div class="row">
+
+          <div class="col-sm-4 col-feature-red">      
+            <b class="glyphicon glyphicon-features glyphicon-red glyphicon-cloud"></b>
+            <h2> Store &amp; retrieve student data using cloud servers </h2>
+           
+              <ul class="feature-description clearfix">
+                <li>Manage students admission process</li>
+                <li>Student information management</li>
+                <li>Store details of school and subject attendance for each student</li>    
+              </ul>
+            
+          </div>
+
+          <div class="col-sm-4 col-feature-blue">
+          <b class="glyphicon  glyphicon-features glyphicon-blue  glyphicon-wrench"></b>
+            <h2> School administration made easier </h2>
+           
+              <ul class="feature-description">
+                <li>School timetable planning</li>
+                <li>School and Exam timetable modules</li>              
+              </ul>
+           
+          </div>
+ 
+          <div class="col-sm-4 col-feature-green">
+          <b class="glyphicon  glyphicon-features glyphicon-green glyphicon-stats"></b>
+            <h2>Manage Student Results more accurately</h2>
+           
+              <ul class="feature-description">
+                <li>Computerized results</li>
+                <li>View Graphical Reports of Students Performance both subject and general</li>           
+              </ul>        
+           
+          </div>
+    </div>
+        
+    <div class="row">
+      
+      <div class="col-sm-4 col-feature-yellow">
+      <b class="glyphicon  glyphicon-features glyphicon-yellow glyphicon-envelope"></b>
+        <h2>Share student feedback with parents with a click</h2>
+       
+          <ul class="feature-description">
+            <li>See all Parent and Guardian Information in a single place</li>
+            <li>Send Free messages to parents</li>            
+          </ul>
+       
+      </div>
+
+      <div class="col-sm-4 col-feature-grey">
+      <b class="glyphicon glyphicon-features glyphicon-grey glyphicon-comment"></b>
+        <h2>Supports communication within the organization</h2>
+     
+          <ul class="feature-description">
+            <li>Inbuilt internal messaging system to connect with students, employees and teachers and parents</li>
+          </ul>
+    
+      </div>
+
+        <div class="col-sm-4 col-feature-white">
+        <b class="glyphicon glyphicon-white glyphicon-features glyphicon-thumbs-up"></b>
+          <h2>Completely hassle-free setup</h2>
+         
+            <ul class="feature-description">
+              <li>Get started with minimal upfront cost and no hidden fees</li>
+              <li>Web based system which only requires a device - mobile phone, tablet, laptop to access</li>                
+            </ul>
+                
+        </div> 
+
+       <!-- End row--> 
+    </div>
+  <!-- End container div -->
+  </section>
+  </div>
+  <!-- END OF SECTION OUR AMAZING FEATURES-->     
+
+
+  <!-- DETAILED-FEATURES SECTION--> 
+  <div class="container">
+  <section id="benefits-features">   
+
+  <section id="features-all">
+    <!-- ### Benefits of using SchoolManager ### -->
+
+      <div class="row">
+       <div class="col-sm-12 text-center features-header">
+        <h6 class="col-sm-offset-12 text-center sub-heading">Why SchoolManager?</h6>        
+         <div class="btn-group roleslist"> 
+          <button  type="button" class="btn btn-md btn-success" onclick="displayFeatures('benefits')">Benefits</button>         
+          <button  type="button" class="btn btn-md btn-default" onclick="displayFeatures('teachers')">Teachers</button>
+          <button  type="button" class="btn btn-md btn-default" onclick="displayFeatures('parents')">Parents</button>
+          <button  type="button" class="btn btn-md btn-default" onclick="displayFeatures('administrators')">Administrators</button>
+          <button  type="button" class="btn btn-md btn-default" onclick="displayFeatures('students')">Students</button>
+         </div>         
+       </div>
+  
+
+      <div class="col-sm-12 detailed-features">
+      <h1>Here are some reason's why you should use SchoolManager...</h1>
+      <ul class="detailed-features-list">
+      <li>Features for everyone
+       <ul>
+          <li><span class="glyphicon glyphicon-check">&nbsp;</span>Teachers</li>
+          <li><span class="glyphicon glyphicon-check">&nbsp;</span>Parents</li>
+          <li><span class="glyphicon glyphicon-check">&nbsp;</span>School administrators</li>
+          <li><span class="glyphicon glyphicon-check">&nbsp;</span>Students</li>
+        </ul>
+        </li>
+      <li>Free Website</li> 
+      <li>Zero Technology Management</li>  
+      <li>Zero Payment on Servers and Domain Renewals</li>  
+      <li>Minimal Downpayments</li>  
+      <li>Free Training</li>
+      <li>Free Text Messages</li>
+      <li>100&#37; Availability</li> 
+      </ul> 
+      </div>
+      </div>
+   
+   </section>
+
+      
+    <!--END of Benefits of using SchoolManager -->
+    <!-- ###Features for teachers### -->
+   
+    <section id="features-teachers"> 
+      <div class="row">
+
+       <div class="col-sm-12 text-center features-header">
+           <h6 class="col-sm-offset-12 text-center sub-heading">Why SchoolManager?</h6>
+          <div class="btn-group roleslist"> 
+          <button  type="button" class="btn btn-md btn-default" onclick="displayFeatures('benefits')">Benefits</button> 
+          <button  type="button" class="btn btn-md btn-success" onclick="displayFeatures('teachers')">Teachers</button>
+          <button  type="button" class="btn btn-md btn-default" onclick="displayFeatures('parents')">Parents</button>
+          <button  type="button" class="btn btn-md btn-default" onclick="displayFeatures('administrators')">Administrators</button>
+          <button  type="button" class="btn btn-md btn-default" onclick="displayFeatures('students')">Students</button>
+         </div>
+       </div>
+     
+  
+      <div class="col-sm-12 detailed-features">
+      <h1>Features for teachers</h1>
+        <ul> 
+         <li>Teachers will be able to speedily upload student's continous assessment grades and scores</li>
+         <li>Automate Computation of Results</li>
+         <li>Manage Students effectively</li>
+         <li>Devote more time to teaching and working with Students</li>
+         <li>Prepare student report cards speedily</li>
+         <li>Generate automated reports to compare student achievement and subject-by-subject performance from one term to another</li>
+         </ul>      
+     </div>   
+     
+     </div>
+     </section>
+ 
+     <!-- End features for teachers-->
+
+     <!-- ###Features for parents### -->
+     <section id="features-parents">
+
+     <div class="row">
+       <div class="col-sm-12 text-center features-header">
+           <h6 class="col-sm-offset-12 text-center sub-heading">Why SchoolManager?</h6>
+          <div class="btn-group roleslist"> 
+          <button  type="button" class="btn btn-md btn-default" onclick="displayFeatures('benefits')">Benefits</button> 
+          <button  type="button" class="btn btn-md btn-default" onclick="displayFeatures('teachers')">Teachers</button>
+          <button  type="button" class="btn btn-md btn-success" onclick="displayFeatures('parents')">Parents</button>
+          <button  type="button" class="btn btn-md btn-default" onclick="displayFeatures('administrators')">Administrators</button>
+          <button  type="button" class="btn btn-md btn-default" onclick="displayFeatures('students')">Students</button>
+         </div>
+       </div>
+
+  
+      <div class="col-sm-12 detailed-features">         
+      <h1>Features for Parents</h1>
+         <ul> 
+         <li>The system will involve parents in the everyday process of educating their children</li>
+         <li>The system will enable parents furnish required information about their wards online.</li>
+         <li>The system will allow parents view comparative analysis of their children's performance from one term to another on a subject by subject basis.</li>
+         <li>The system will increase the participation of parents in monitoring the academic performance of their children for enhanced outcomes</li>
+         </ul>  
+      </div>        
+    </div>
+
+    </section>
+
+     <!--- #### School Administrator features ### -->
+  <section id="features-administrators">
+
+     <div class="row">
+
+       <div class="col-sm-12 text-center features-header">
+           <h6 class="col-sm-offset-12 text-center sub-heading">Why SchoolManager?</h6>
+          <div class="btn-group roleslist">
+          <button  type="button" class="btn btn-md btn-default" onclick="displayFeatures('benefits')">Benefits</button> 
+          <button  type="button" class="btn btn-md btn-default" onclick="displayFeatures('teachers')">Teachers</button>
+          <button  type="button" class="btn btn-md btn-default" onclick="displayFeatures('parents')">Parents</button>
+          <button  type="button" class="btn btn-md btn-success" onclick="displayFeatures('administrators')">Administrators</button>
+          <button  type="button" class="btn btn-md btn-default" onclick="displayFeatures('students')">Students</button>
+         </div>
+       </div>
+
+      <div class="col-sm-12 detailed-features">
+       
+      <h1>Features for School Administrators</h1>
+          <ul> 
+         <li>Empower administrators to make informed decisions based on timely access to real-time data on students, staff and parents</li>
+         <li>Administrators will be able to see automated reports showing proficiency of individual students, subjects, grades or teachers</li>
+         <li>View and add comments to school reports</li>
+         <li>Manage student information seamlessly and communicate with parents more effectively</li>
+         <li>Manage and Plan School Activities Efficiently</li>
+         <li> Manage Teachers Efficiently</li>
+         <li>Ensure ease of storage of student records and other school data and make it searchable and available whenever needed.</li>
+         <li>SchoolManager allows you to manage exams, create exam timetables and reports as well as publish reports.</li>
+         <li>Present your results as charts and graphics</li>
+         <li>Present detailed results showing improvement on a subject basis</li>
+         <li>SchoolManager helps the School, Teachers and Parents identify specific areas of difficulty for each student and focus efforts towards improvement</li>
+         </ul>  
+      </div>   
+      </div>
+    
+ </section>
+  <!-- End features for School Administrators-->
+  <!--- #### Students features ### -->
+  <section id="features-students">
+
+     <div class="row">
+       <div class="col-sm-12 text-center features-header">
+           <h6 class="col-sm-offset-12 text-center sub-heading">Why SchoolManager?</h6>
+          <div class="btn-group roleslist"> 
+          <button  type="button" class="btn btn-md btn-default" onclick="displayFeatures('benefits')">Benefits</button> 
+          <button  type="button" class="btn btn-md btn-default" onclick="displayFeatures('teachers')">Teachers</button>
+          <button  type="button" class="btn btn-md btn-default" onclick="displayFeatures('parents')">Parents</button>
+          <button  type="button" class="btn btn-md btn-default" onclick="displayFeatures('administrators')">Administrators</button>
+          <button  type="button" class="btn btn-md btn-success" onclick="displayFeatures('students')">Students</button>
+         </div>
+       </div>
+    
+      <div class="col-sm-12 detailed-features">       
+      <h1>Features for Students </h1>
+      <ul> 
+      <li>The system will ensure that students in concert with their parents can follow their academic performances in detail.</li>
+     <li>Provide students with the information they need to set goals and participate in their education</li>
+     </ul> 
+     </div>   
+    
+     </div>
+
+  </section>
+     <!-- End of Features for students-->
+    
+</section>
+</div>
+
+ <!-- End of detailed features-->
+   
+ <!-- ########## Services Provided ##########-->
+     <section id="services" class="services-information">        
+        <div class="container">          
+          <div class="row">
+            <div class="col-sm-12 text-center">
+            <h6 class="sub-heading">Services We Provide </h6>
+          </div>
+          </div>
+
+            <!-- Migration Services -->
+          <div class="row">
+            <div class="col-sm-4">
+            <div class="migration-services text-center">
+            <p class="text-center"><span class="glyphicon services-glyphicon glyphicon-cloud-upload"></span></p>
+            <h2>Migration Services</h2>
+            <p class="services-description text-center">
+              We offer data migration services to enable you to migrate your school to our SchoolManager platform. We can migrate your School data from any platform you currently use, Excel Spreadsheets, MS Word, MS Access or any other software to the SchoolManager platform. The cost of migration is dependent on the complexity of the data.
+            </p>
+            </div>
+            </div>
+
+            <!-- Customization Services -->
+            <div class="col-sm-4">
+            <div class="customization-services">
+            <p class="text-center"><span class="glyphicon services-glyphicon glyphicon-heart"></span></p>     
+            <h2>Customization Services</h2>
+              <p class="services-description">
+              SchoolManager offers a full-fledged School Management Solution to meet the demands of modern school management, however should you require customization to meet specific needs which you may have, we can offer customized development to meet your specific requirements.You may contact us for pricing of a customized solution. 
+              </p>
+            </div>
+            </div>
+
+            <!-- Data-conversion Services-->
+            <div class=" test col-sm-4">
+            <div class="data-conversion-services">
+              <p class="text-center"><span class="glyphicon services-glyphicon glyphicon-transfer"></span></p>                                
+                <h2>Data Conversion</h2>
+                <p class="services-description">
+                  We offer data conversion services to convert your data in paper format into electronic records to enable you manage your information seamlessly with SchoolManager.
+                </p>
+              </div>           
+          </div>    
+          <!--   <hr class="line"/>  -->
+        </div>  
+       </div>
+ <!-- #### End of Services section #### --> 
+ </section>
+         
+ <!-- ######### Pricing and Plans Section ######## -->
+  <section  id="pricingPlans">
+    <div class="container">
+  
+     <div class="row">
+      <div class="col-sm-12"> 
+      <h6 class="text-center sub-heading">SchoolManager Plans</h6><br>
+      </div>
+     </div>
+  <!-- ###########  Basic & Premium Plans ######### -->
+      <div class="row">
+        <div class="col-sm-12 table-responsive"> 
+          <table class="table table-condensed table-hover table-bordered table-striped">
+          
+            <thead>
+              <tr><th style="width:60%;">
+                Features
+              </th>
+              <th  class="text-center " style="width:20%;">
+                Basic Plan
+              </th>
+              <th  class="text-center text-info" style="width:20%;">
+                Premium Plan
+              </th>
+              </tr>
+            </thead> 
+
+            <tbody>           
+              <tr>
+                <td>Electronic Student Records</td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>                
+              </tr>
+              <tr>
+                <td>Automated Result Generation</td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+              </tr>
+              <tr>
+                <td>Electronic Storage of Student Academic Performance Records</td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+              </tr>
+              <tr>
+                <td>Online Forms for Web Registration and Download</td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+              </tr>
+              <tr>
+                <td>Application for Enrollment Forms</td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+              </tr>
+              <tr>
+                <td>Free Website and Linking of EMS with Website</td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+              </tr> 
+              <tr>
+                <td>Free Bulk Text Messages &#40;5 Times a Term&#41;</td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+              </tr>
+                <tr>
+                <td>Teacher Management and Subject Assignment</td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+              </tr>
+              <tr>
+                <td>Parent Communication System</td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+              </tr>
+              <tr>
+                <td>Access School and Student Information from anywhere using computers, mobiles and smartphones</td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+              </tr>
+              <tr>
+                <td>Auto-Generate Testimonials and Transcripts of Student Performance</td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+              </tr>
+              <tr>
+                <td>Free USB Internet Modem &amp;Internet Plan &#40;1500 a Month Data Plan&#41;</td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+              </tr>
+              <tr>
+                <td>School Finance Management</td>
+                <td><span class="glyphicon glyphicon-remove"></span></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+              </tr>
+              <tr>
+                <td>School Staff Management &#40;Human Resources&#41;</td>
+                <td><span class="glyphicon glyphicon-remove"></span></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+              </tr>
+              <tr>
+                <td>School Inventory Management</td>
+                <td><span class="glyphicon glyphicon-remove"></span></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+              </tr>
+              <tr>
+                <td>Online Payment of Staff Salaries and Generation of Payslips</td>
+                <td><span class="glyphicon glyphicon-remove"></span></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+              </tr>              
+           </tbody> 
+          
+          </table>
+         </div> 
+      </div>
+      </div>
+  </section>
+    
+  <!-- Footer -->
+  <footer class="main-footer">
+   <div class="container">
+      <div class="row">
+    
+        <div class="col-sm-6">
+        <h6 class="footer-description">About SchoolManager</h6>
+          <p class="footer-description">
+            SchoolManager&trade; is a flagship educational and school management solution from Zero&amp;One Technologies, a leader in the delivery of Information and Communication Technology solutions to Government, Businesses, Schools, Hotels and other establishments in Nigeria. 
+          </p>         
+        </div>
+
+          <div class="col-sm-3">
+          
+            <ul class="link-list">
+            <li class="heading"><h6>PRODUCT</h6></li>
+            <li><a href="index.html">Description</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricingPlans">Pricing &amp; Plans</a></li>  
+            </ul>
+          
+          </div>
+          <div class="col-sm-3">
+            <ul class="link-list">
+            <li class="heading"><h6>COMPANY</h6></li> 
+              <li><a href="about.html#company-information">About SchoolManager</a></li>
+              <li><a href="about.html#vision">Vision</a></li>
+              <li><a href="about.html#MediaAndPress">Media &amp; Press</a></li>
+              <li><a href="about.html#careers">Careers</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+          </div>   
+
+       </div>
+     </div>
+  </footer>     
+  
+  <div class="copyright-section"> 
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-12">
+              <p class= "footer-brand">SchoolManager <span class="copyright-text"> Copyright &copy; 2014 All rights reserved.</span> </p>
+              
+          </div>     
+      </div>    
+    </div>       
+  </div>
+ <!-- End Footer -->   
+      
+  <!-- Javascript and jQuery -->    
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="http://imsky.github.io/holder/holder.js"></script>
+    <script src="js/jquery-functions.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script>
+    $(document).ready(function()
+      { 
+          $('#features-parents').hide();
+          $('#features-teachers').hide();
+          $('#features-administrators').hide();
+          $('#features-students').hide();
+      }
+    )
+    </script>
+ 
+  </body>
+</html>

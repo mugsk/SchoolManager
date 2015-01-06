@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SchoolManager</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/my-styles.css" rel="stylesheet" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    <noscript>
+    <!-- To hide the map if javascript is turned off -->
+    <style>
+        #map{
+          display:none;
+        }
+        .contact-us-form{
+          margin-top: 10%;
+        }
+        #contact-us-img{
+          margin-top: 5%;
+        }
+    </style>
+</noscript>
+  </head>
+  <body>
+
+ 
+
+  <!-- Navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+ 
+     <!--  <div class="navbar-header"> -->
+      <div class="container">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+       <!--<a class="pull-left" href="#"></a> -->
+       <img class="nav-img pull-left" src="img/Transpatent.png" alt="SchoolManager"/>                
+       <div class="collapse navbar-collapse pull-right">
+             
+            <ul class="nav nav-pills">  
+            <li class="home" onclick="navItemSelected(this)"><a href="index.html">Home</a></li>
+            <li><a href="about.html" onclick="navItemSelected(this)">About</a></li>
+            <li><a href="index.html#features" onclick="navItemSelected(this)">Features</a></li>
+            <li><a href="index.html#services" onclick="navItemSelected(this)">Services</a></li>              
+            <li><a href="index.html#pricingPlans" onclick="navItemSelected(this)">Plans</a></li>
+            <li class="active" onclick="navItemSelected(this)"><a>Contact Us</a></li>         
+           </ul>
+        </div> 
+
+     </div> 
+    </div>
+  <!-- End Navbar -->
+	<!-- Google Map -->
+    <div id="map" class="map">
+    </div> 	
+
+  <!-- Main Content -->  
+    			
+                <section id="contact-information" class="main-content">
+                  <div class="container"> 
+                  <div class="row">
+                            <div class="col-sm-12">
+                               <div class="pull-left contact-us-form">
+                                    <h6 class="sub-heading">Contact Us</h6>
+                                    <p>You can contact us at any of the addresses below to find out how we can help your school improve efficiency and academic outcomes OR fill the contact form below and we will visit you to give a demonstration and discuss an implementation <em>within 48 hours.</em> </p>
+                                
+                                    <div class="panel panel-default">
+                                    <div class="panel-body">
+
+                                <form role="form" name="get_in_touch_form" id="get_in_touch_form" method="post" action="test.php">
+                                 <div class="form-group">
+                                 <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                                 </div>
+                                 
+                                 <div class="form-group">
+                                 <input type="text" class="form-control" name="school" id="school" placeholder="School/Organization">
+                                 </div>
+
+                                 <div class="form-group">
+                                  <label class="sr-only" for="email">Email address</label>
+                                  <input type="email" class="form-control" name="email" id="email" placeholder="Email address">
+                                  </div>
+                                  
+                                  
+                                 <textarea class="form-control" rows="10" name="message" id="message" placeholder="Your Message"></textarea>
+                                 
+                                 <br>
+                                 
+                                 <button type="submit" class="btn btn-large btn-primary">Send Message</button>
+                                 </form>
+
+
+
+                                  </div>
+                                </div>                                
+                            </div>
+                        		<div id="office-address" class="pull-left">
+                                <img id="contact-us-img"  class="pull-left" src="img/contact-us.jpg" width="300" alt="Contact-us"/><br>
+                                                              
+                                   <h2 class="text-center"> Office Addresses</h2>
+                                      <address>
+                                        3/5 Alhaji Lateef Kayode Jakande House,<br>
+                                        Adeyemo Alakija, Victoria Island<br>
+                                        Lagos<br>
+                                      </address>
+                                      <address>
+                                       
+                                      No 2 Elder Marcus Wike Street,<br>
+                                      Off Iwofe/COE Road, Port-Harcourt<br>
+                                      Rivers State<br>
+                                      Abuja, Lagos<br><br>
+                                      </address>                                                                     
+                                </div>
+                                
+                                </div>
+                     </div>
+              <div class="row">                  
+          	  <div class="contact-numbers"> 
+              <div class="col-sm-12"><h2>Contact Numbers</h2></div>
+              <div class="col-sm-3 border">
+                <p>Lagos</p>
+                <div class="tel-number"> <span class="glyphicon glyphicon-earphone"></span> +234 808-339-4828 </div>
+              </div>
+              <div class="col-sm-3 border">
+                <p>Port-Harcourt </p>
+                <div class="tel-number"> <span class="glyphicon glyphicon-earphone"></span> +234 802-744-3516 </div>
+              </div> 
+              <div class="col-sm-3 border">
+                <p>United-Kingdom </p>
+                <div class="tel-number"> <span class="glyphicon glyphicon-earphone"></span> +447 577-696-916 </div>
+              </div>
+              <div class="col-sm-3">
+                <p>Kenya</p>
+                 <div class="tel-number"><span class="glyphicon glyphicon-earphone"></span> +254 720-330-266</div>
+              </div>      
+              </div>                                   
+               </div>
+               </div>      
+            </section>
+           
+ 
+ <!-- Footer -->
+  <footer class="main-footer">
+   <div class="container">
+      <div class="row">
+    
+        <div class="col-sm-6">
+        <h6 class="footer-description">About SchoolManager</h6>
+          <p class="footer-description">
+            SchoolManager&trade; is a flagship educational and school management solution from Zero&amp;One Technologies, a leader in the delivery of Information and Communication Technology solutions to Government, Businesses, Schools, Hotels and other establishments in Nigeria. 
+          </p>         
+        </div>
+
+          <div class="col-sm-3">
+            <ul class="link-list">
+            <li class="heading">PRODUCT</li>
+            <li><a href="index.html">Product Description</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#pricingPlans">Pricing &amp; Plans</a></li>  
+            </ul>
+          </div>
+
+          <div class="col-sm-3">
+            <ul class="link-list">
+            <li class="heading">COMPANY</li> 
+              <li><a href="about.html#company-information">About SchoolManager</a></li>
+              <li><a href="about.html#vision">Vision</a></li>
+              <li><a href="about.html#MediaAndPress">Media &amp; Press</a></li>
+              <li><a href="about.html#careers">Careers</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+          </div>   
+
+       </div>
+     </div>
+  </footer>     
+  
+  <div class="copyright-section"> 
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-12">
+              <p class= "footer-brand">SchoolManager <span class="copyright-text"> Copyright &copy; 2014 All rights reserved.</span> </p>
+              
+          </div>     
+      </div>    
+    </div>       
+  </div>
+ <!-- End Footer -->   
+   <script src="http://code.jquery.com/jquery.js"></script>
+   <script src="js/bootstrap.min.js"></script>  
+   <script src="js/jquery-functions.js"></script>     
+   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="js/gmap.js"></script>
+	<script type="text/javascript">
+	var map;
+	$(document).ready(function(){
+	  map = new GMaps({
+		div: '#map',
+		lat: 6.432373,
+		lng: 3.419033
+	  });
+	});
+	</script>
+
+  </body>
+</html>
